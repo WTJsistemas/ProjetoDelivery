@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="/templates/modeloSistema.xhtml">
+
+	<ui:define name="menu_topo">
+		<ui:include src="/includes/menuTopo.xhtml"></ui:include>
+	</ui:define>
+	<ui:define name="menu_esquerdo">
+		<h:form>
+			<p:menu style="width: 200px">
+				<p:submenu label="Categorias">
+					<p:menuitem value="Farmácias" />
+					<p:menuitem value="Restaurantes" />
+					<p:menuitem value="Oficinas" />
+				</p:submenu>
+				<p:submenu label="Non-Ajax">
+					<p:menuitem value="Delete" />
+				</p:submenu>
+				<p:submenu label="Navigations">
+					<p:menuitem value="External" />
+					<p:menuitem value="Internal" />
+				</p:submenu>
+			</p:menu>
+		</h:form>
+	</ui:define>
+
+	<ui:define name="conteudo">
+	<p:commandButton value="clieuq"></p:commandButton>
+	</ui:define>
+
+
+</ui:composition>
